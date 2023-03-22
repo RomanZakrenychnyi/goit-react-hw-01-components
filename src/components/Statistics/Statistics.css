@@ -1,0 +1,20 @@
+.statistics {
+    text-align: center;
+    border: solid;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.stat-list {
+    display: flex;
+    gap: 10px;
+}
+
+
+.label {
+    font-size: 30px;
+}
+

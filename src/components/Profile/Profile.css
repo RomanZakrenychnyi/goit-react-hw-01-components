@@ -1,0 +1,49 @@
+ul, p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  border: 2mm solid #000;
+  margin-bottom: 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.mainAvatar {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+.tag {
+    margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+justify-content: space-evenly;
+    text-align: center;
+}
+
+.stats__item {
+  display: flex;
+}
+
+.stats__block {
+    width: 200px;
+    justify-content: center;
+  align-content: center;
+}
