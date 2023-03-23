@@ -1,9 +1,9 @@
 import FriendListItem from '../FriendListItem/FriendListItem';
-import './FriendList.css'
+import style from './FriendList.module.css'
 
 const FriendList = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <ul className={style.friendList}>
       <FriendListItem friends={friends} />
     </ul>
   );

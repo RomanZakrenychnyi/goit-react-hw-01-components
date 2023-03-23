@@ -1,38 +1,38 @@
 import PropTypes from 'prop-types';
-import './Profile.css';
+import style from './Profile.module.css';
 
 const Profile = ({ userData }) => {
   const { username, tag, location, stats, avatar } = userData;
   const { followers, likes, views } = stats;
 
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="mainAvatar" />
-        <p className="name">
+    <div className={style.profile}>
+      <div className={style.description}>
+        <img src={avatar} alt="User avatar" className={style.mainAvatar} />
+        <p className={style.name}>
           <b>{username}</b>
         </p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <p className={style.tag}>@{tag}</p>
+        <p className={style.location}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li className="stats__item">
-          <div className="stats__block">
-            <p className="label">Followers</p>
-            <p className="quantity">{followers}</p>
+      <ul className={style.stats}>
+        <li className={style.statsItem}>
+          <div className={style.statsBlock}>
+            <p className={style.label}>Followers</p>
+            <p className={style.quantity}>{followers}</p>
           </div>
         </li>
         <li>
-          <div className="stats__block">
-            <p className="label">Views</p>
-            <p className="quantity">{views}</p>
+          <div className={style.stats__block}>
+            <p className={style.label}>Views</p>
+            <p className={style.quantity}>{views}</p>
           </div>
         </li>
         <li>
-          <div className="stats__block">
-            <p className="label">Likes</p>
-            <p className="quantity">{likes}</p>
+          <div className={style.statsBlock}>
+            <p className={style.label}>Likes</p>
+            <p className={style.quantity}>{likes}</p>
           </div>
         </li>
       </ul>

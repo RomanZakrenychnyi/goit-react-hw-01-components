@@ -7,18 +7,14 @@
 
 .title {
     font-size: 48px;
+    flex-direction: column;
 }
 
-.stat-list {
+.statList {
     display: flex;
     gap: 10px;
     justify-content: space-around;
 }
-
-.column {
-    flex-direction: column;
-}
-
 
 .label {
     font-size: 30px;
