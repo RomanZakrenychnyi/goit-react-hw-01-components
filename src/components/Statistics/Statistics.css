@@ -13,8 +13,13 @@
     gap: 10px;
 }
 
+.column {
+    flex-direction: column;
+}
+
 
 .label {
     font-size: 30px;
 }
+
 
